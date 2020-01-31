@@ -1,8 +1,0 @@
-<canvas id="GameCanvas" width="720" height="480">
-</canvas>
-
-<div class="label score">{{gameState}} Score: {{gameScore}}</div>
-<div class="label lives">Lives: {{gameLives}}</div>
-<div *ngIf="gameState === GAME_STATE.PAUSE" class="label pause-screen">Paused</div>
-<div *ngIf="gameState === GAME_STATE.START" class="label start-screen">Press Enter to start new game.</div>
-<div *ngIf="gameState === GAME_STATE.OVER" class="label game-over-screen">GAME OVER<br />Press Enter to start new game.</div>
